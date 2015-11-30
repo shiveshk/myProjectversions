@@ -1,0 +1,50 @@
+@CHARSET "ISO-8859-1";
+<style>
+
+ p {
+  white-space: pre;
+ }
+sup {
+    vertical-align: super;
+    font-size: smaller;
+    color : red;
+}
+
+#img1 {
+	align: center;
+	margin: auto;
+	width: 100px;
+	bottom: 100px; 
+    height: 100px; 
+}
+
+#img2 {
+	align: center;
+	margin: auto;
+	bottom: 100px; 
+    height: 100px; 
+    width: 1350px;
+}
+#img3 {
+    float: right;
+    margin: 0 0 100px 100px;
+}
+
+
+tr.row2 td {
+    padding-top: 20px;
+}
+
+tr.row3 td {
+    padding-top: 20px;
+}
+
+tr.row4 td {
+    padding-top: 20px;
+}
+
+
+.modal-content {
+    background-color: #E0E0E0 ;
+}
+</style> 

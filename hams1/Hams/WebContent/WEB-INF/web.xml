@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Hams</display-name>
+  <context-param>
+    <param-name>log4j-config-location</param-name>
+    <param-value>WEB-INF/log4j.properties</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>PatientAppointmentServlet</display-name>
+    <servlet-name>PatientAppointmentServlet</servlet-name>
+    <servlet-class>com.hams.servlets.PatientAppointmentServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>PatientAppointmentServlet</servlet-name>
+    <url-pattern>/PatientAppointmentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SaveOrEditAppointmentServlet</display-name>
+    <servlet-name>SaveOrEditAppointmentServlet</servlet-name>
+    <servlet-class>com.hams.servlets.SaveOrEditAppointmentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveOrEditAppointmentServlet</servlet-name>
+    <url-pattern>/SaveOrEditAppointmentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <description></description>
+    <display-name>LogoutServlet</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.hams.servlets.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
